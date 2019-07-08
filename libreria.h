@@ -1,3 +1,8 @@
+#if defined (_WIN32)
+    #include <windows.h>
+#elif defined (_WIN64)
+    #include <windows.h>
+#endif
 #include <iostream>
 #include <string>
 #include <array>
@@ -7,12 +12,15 @@
 #include <unistd.h>
 #include <algorithm>
 #include <chrono>
+#include <sys/stat.h>
 #include <fstream>
 #include <stdio.h>
 #include <string.h>
 #include <sstream>
 #include <ctime>
-#include <iterator> 
+#include <iterator>
+#include <boost/filesystem/operations.hpp>
+#include <boost/filesystem/path.hpp>
 using namespace std;
 
 void swapint(int arr[], int size) {
@@ -92,4 +100,13 @@ int randint(int max) {
     std::mt19937 generator(device());
     std::uniform_int_distribution<int> distribution(0, max);
     return distribution(generator);
+}
+
+string spoon(string text) {
+    for (int i=0; i<text.length(); i++) {
+        if (text[i] == ' ') {
+            text[i] = '_';
+        }
+    }
+    return text;
 }
