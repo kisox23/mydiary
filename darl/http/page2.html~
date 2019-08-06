@@ -1,0 +1,49 @@
+<html>
+<head><title>Mood's Hub</title></head>
+<style>
+	body {background-image: url("stars.jpg");}
+	h1 {margin-top: 50px; text-align: center; font-family: serif; font-variant: inherit; color: lightcyan; font-size: 50px;} 
+	h3 {text-align: center; font-weight: lighter; color: lightcyan;}
+	div {text-align: center;}
+	
+	#bt1 {position: absolute; left: 80px; height: 120px; width: 300px; background-color: lightcyan;
+	font-size: 60px; font-style: oblique; 
+	border-radius: 30px; border-color: violet; border-width: 10px;}
+	#bt2 {position: absolute; right: 80px; height: 120px; width: 300px; background-color: lightcyan;
+	font-size: 40px; font-style: oblique;
+	border-radius: 30px; border-color: pink; border-width: 10px;}
+	#bt3 {position: absolute; left: 80px; margin-top: 400px; height: 120px; width: 300px; background-color: lightcyan;
+	font-size: 60px; font-style: oblique;
+	border-radius: 30px; border-color: lightgreen; border-width: 10px;}
+	#bt4 {position: absolute; right: 80px; margin-top: 400px; height: 120px; width: 300px; background-color: lightcyan;
+	font-size: 40px; font-style: oblique;
+	border-radius: 30px; border-color: blue; border-width: 10px;}
+	#btt {margin-top: 800px; height: 120px; width: 300px; background-color: lightcyan;
+	font-size: 50px; font-style: oblique;
+	border-radius: 30px; border-color: whitesmoke; border-width: 10px;}
+</style>
+<body>
+	<h1><b>Ciao, Darling! Benvenuta!</b></h1>
+	<h3><i>So bene che certe volte non sei nel giusto mood, per questo mi sto dedicando ad una serie di "letterine" motivazionali per ogni tuo possibile mood.</i></h3>
+	<h3>Scegli pure! Quando ti senti...</h3><br><br><br><br><b>
+	<button onclick="sadness()" id="bt1">TRISTE</button>
+	<button onclick="awful()" id="bt2">MALINCONICA</button>
+	<button onclick="alone()" id="bt3">SOLA</button>
+	<button onclick="nomind()" id="bt4">INCOMPRESA</button>
+	<div><button onclick="textme()" id="btt">SCRIVIMI</button></div>
+</body>
+<script>
+	function sadness() {
+		window.open("/sadness.html");
+	}
+	function awful() {
+		window.open("/awful.html");
+	}
+	function alone() {
+		window.open("/alone.html");
+	}
+	function nomind() {
+		window.open("/nomind.html");
+	}
+</script>
+</html>

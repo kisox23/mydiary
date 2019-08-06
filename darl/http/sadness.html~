@@ -1,0 +1,22 @@
+<html>
+<head><title>TRISTEZZA</title></head>
+<style>
+	body {background-color: black;}
+	h2 {text-align: center; color: whitesmoke; margin-top: 50px; font-size: 50px;}
+	h3 {text-align: center; color: whitesmoke; font-size: 25px; font-style: italic;}
+	img {margin-left: auto; margin-right: auto; display: block;}
+	a {color: whitesmoke;}
+</style>
+<body>
+	<h2>Darling, sei triste? Che succede?</h2><br>
+	<h3>Sentirsi tristi &#232 normale, &#232 una cosa che deve succedere perch&#233 la tristezza va vissuta come la felicit&#224, &#232 altrettanto importante e lo sai bene.</h3>
+	<img src="/blackcloud.png">	
+	<h3 id="bop">Tuttavia bisogna anche essere coscienti di ci&#242 che la provoca e ancora meglio bisogna essere convinti dei motivi che sicuramente ci sono per non essere tristi.</h3>
+	<h3>Tu sei una ragazza formidabile e le tue esperienze ne sono la dimostrazione: non ti arrendi facilmente ma sopratutto riesci a rialzarti sempre, invidio leggermente la tua testa calda, uno fra i tanti motivi per cui ti amo.</h3>
+	<h3>La tristezza &#232 relativa se sai di avere accanto persone pronte ad aiutarti a passare certi momenti, e se sai che di motivi per essere felici ce ne sono molti di pi&#249.</h3>
+	<h3>Sei davvero speciale, ricordalo sempre.</h3>
+	<img src="/coffee.jpg">
+	<h3>Ricordati che per qualsiasi motivo io ci sar&#242 sempre, nel bene e nel male, perch&#233 noi due siamo DARLING &#x263c.</h3><br>
+	<h3>Se senti il bisogno di esprimere meglio il motivo della tua tristezza, <a href="/contenitore.html">premi qui.</a></h3>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head><title>CONTENITORE</title></head>
+<style>
+	html {display: table; margin: auto; height: 100%;}
+	h1 {text-align: center; margin-top: 50px; font-family: serif; font-variant: inherit; font-size: 50px;}
+	body {background-color: lemonchiffon; display: table-cell; vertical-align: middle; height: 100%;}
+	button {font-style: oblique; background-color: lightpink; border-radius: 20px; border-width: 5px; border-color: black;
+	display: block; margin: auto; margin-top: 180px; height: 100px; width: 300px;
+	font-size: 40px;}
+	textarea {display: block; margin: 0 auto; border-width: 3px;}
+</style>
+<body>
+	<h1>Qui puoi scrivere tutto quello che ti passa per la testa, prego!</h1>
+	<form method="post">
+	<textarea id="txtarea" cols="100" rows="5"></textarea>
+	<button onclick="savetxt()" id="sbmtid">INVIA</button></form>
+</body>
+<script>
+import fs;
+function savetxt() {
+	var xx = document.getElementById('txtarea').value;
+	
+	close();
+}
+</script>
+</html>

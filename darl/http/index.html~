@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Darling's Hub</title>
+<style>
+	body {background-color: pink; margin-top: 50px;}
+	h1 {font-family: serif; font-variant: inherit;}
+	h2 {font-weight: lighter;}
+	#passw {display: block; margin: 0 auto; width: 500px; height: 80px; table-layout: fixed; text-align: center;
+	font-size: 60px; border-color: black; border-style: solid;}
+	#passw::value {text-align: center;}
+	#passw::placeholder {text-align: center; color: lightcoral;}
+	#subm {display: block; margin: 0 auto; height: 70; color: lightcoral; width: 250; font-size: 35px;
+	border-style: solid; border-color: black;}
+	form {display: block; margin: 0 auto;}
+	a {display: block; margin: 0 auto; color: black; text-align: center;}
+</style>
+</head>
+<body>
+	<h1 align="center"><b>Questa e' la pagina riservata dei Darling. Se non sei la mia Darling, per favore torna indietro.</b></h1>
+	<br>	
+	<h2	 align="center"><i>Inserisci la password per accedere al portale.</i></h2><br>
+	<form name="myform" id="form1">
+	<input type="password" id="passw" name="password1" value="" placeholder="Scrivi qua"><br>
+	<input type="submit" id="subm" value="Conferma" onclick="check(); return false;">
+	</form>
+	<br>
+	<a href="/page2.html" id="atag" style="visibility: hidden;"><i>Prosegui</i></a>
+</body>
+
+<script>
+var passs = "bokunodarin"
+var password = document.getElementById('passw');
+function check() {
+	if (password.value== "") {
+		alert("Campo vuoto!");
+	} else if (password.value== passs) {
+		document.getElementById('atag').style='visibility: visible';
+	} else {
+		alert("Password errata!") }
+}
+</script>
+</html>
