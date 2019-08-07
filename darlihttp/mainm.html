@@ -17,7 +17,7 @@
 	font-size: 60px; font-style: oblique;
 	border-radius: 30px; border-color: lightgreen; border-width: 10px;}
 	#bt4 {position: absolute; right: 80px; margin-top: 400px; height: 120px; width: 300px; background-color: lightcyan;
-	font-size: 40px; font-style: oblique;
+	font-size: 60px; font-style: oblique;
 	border-radius: 30px; border-color: blue; border-width: 10px;}
 	#btt {margin-top: 800px; height: 120px; width: 300px; background-color: lightcyan;
 	font-size: 50px; font-style: oblique;
@@ -25,12 +25,12 @@
 </style>
 <body>
 	<h1><b>Ciao, Darling! Benvenuta!</b></h1>
-	<h3><i>So bene che certe volte non sei nel giusto mood, per questo mi sto dedicando ad una serie di "letterine" motivazionali per ogni tuo possibile mood.</i></h3>
+	<h3><i>So bene che non sono un web-designer ma questo pi&#249 che un sito &#232 il mio amore per te. Ci ho lavorato tanto. Scegli un mood.</i></h3>
 	<h3>Scegli pure! Quando ti senti...</h3><br><br><br><br><b>
 	<button onclick="sadness()" id="bt1">TRISTE</button>
 	<button onclick="awful()" id="bt2">MALINCONICA</button>
 	<button onclick="alone()" id="bt3">SOLA</button>
-	<button onclick="happy()" id="bt4">INCOMPRES</button>
+	<button onclick="happy()" id="bt4">FELICE</button>
 	<div><button onclick="textme()" id="btt">SCRIVIMI</button></div>
 </body>
 <script>
@@ -45,6 +45,9 @@
 	}
 	function happy() {
 		window.open("/happy.html");
+	}
+	function textme() {
+		window.open("/contenitore.php");
 	}
 </script>
 </html>

@@ -29,12 +29,12 @@ if (isset($_POST['formm'])) {
 	savetxt();
 }
 function savetxt() {
+	$pth = "/srv/http/cont.txt";
 	$line = "\n<----------------------------------------------->";
-	$path = "/srv/http/cont.txt";
-	$file = fopen($path, "a");
+	$file = fopen($pth, "a");
 	$text = $_POST["txtarea"];
-	file_put_contents($path, $text, FILE_APPEND);
-	file_put_contents($path, $line, FILE_APPEND);
+	file_put_contents($pth, $text, FILE_APPEND);
+	file_put_contents($pth, $line, FILE_APPEND);
 	fclose($file);
 	echo "<script>window.close();</script>";
 }
