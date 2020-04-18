@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: #99ffcc;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="47.0" prefHeight="48.0" prefWidth="98.0" text="LOGIN" textAlignment="CENTER">
+         <font>
+            <Font name="Fira Sans Light" size="26.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwd" layoutX="164.0" layoutY="190.0" />
+      <TextField fx:id="user" layoutX="164.0" layoutY="126.0" />
+      <Label layoutX="55.0" layoutY="129.0" text="Username">
+         <font>
+            <Font name="Fira Code Retina" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="193.0" text="Password">
+         <font>
+            <Font name="Fira Code Retina" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="60.0" layoutY="310.0" prefHeight="16.0" prefWidth="277.0" textAlignment="CENTER" textFill="#da0c0c" underline="true">
+         <font>
+            <Font name="Fira Code Retina" size="14.0" />
+         </font></Label>
+      <Button layoutX="236.0" layoutY="246.0" mnemonicParsing="false" onAction="#loginAttempt" text="Submit">
+         <font>
+            <Font name="Fira Sans Medium" size="15.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="checker" layoutX="45.0" layoutY="251.0" mnemonicParsing="false" style="-fx-opacity: 100;" text="Keep me logged">
+         <font>
+            <Font name="Fira Code Retina" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </CheckBox>
+   </children>
+</AnchorPane>
